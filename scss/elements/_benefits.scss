@@ -1,0 +1,179 @@
+.benefits {
+    padding-top: 105px;
+    background: var(--color-light-grey-);
+
+.benefits__primary {
+    background: var(--color-white-);
+    display: flex;
+    position: relative;
+}
+
+.benefits__primary__item-title {
+    font-family: var(--font-raleway-);
+    font-size: 3.6rem;
+    color: var(--color-black-);
+    text-align: left;
+}
+
+.benefits__primary__item-text {
+    font-family: var(--font--openSens-);
+    font-size: 1.6rem;
+    color: var(--color-black-);
+    text-align: left;
+    margin: 30px 0;
+}
+
+.benefits__primary__item__line::after {
+    content: '';
+    display: inline-block;
+    height: 3px;
+    width: 328px;
+    background: red;
+    border: 1px solid #FB3B64;
+}
+
+.benefits__primary__item {
+    display: flex;
+    flex-direction: column;
+    width: 416px;
+    height: 188px;
+    margin: 91px 169px 91px 35px;
+}
+
+.benefits__primary__img {
+    width: 180px;
+    height: 180px;
+    background-color: var(--color-redish-);
+    display: block;
+    border-radius: 40px;
+    position: absolute;
+    top: 38px;
+    right: 71px;
+    margin: 38px 50px 77px 0;
+    transform: rotate(45deg);
+}
+
+.benefits__primary__macbook {
+    width: 386px;
+    height: 219px;
+    margin: 113px 117px 38px 0;
+    z-index: 1;
+}
+
+.benefits__secondary {
+    background: var(--color-white-);
+    display: flex;
+}
+
+.benefits__secondary__item-title {
+    font-family: var(--font-raleway-);
+    font-size: 3.6rem;
+    color: var(--color-black-);
+    text-align: left;
+}
+
+.benefits__secondary__item-text {
+    font-family: var(--font--openSens-);
+    font-size: 1.6rem;
+    color: var(--color-black-);
+    text-align: left;
+    margin: 30px 0;
+}
+
+.benefits__secondary__item__line::after {
+    content: '';
+    display: inline-block;
+    height: 3px;
+    width: 328px;
+    background: var(--color-primary-);
+    border: 1px solid var(--color-primary-);
+}
+
+.benefits__secondary__item {
+    width: 416px;
+    height: 230px;
+    margin: 69px 20px 71px 0;
+}
+
+.benefits__secondary__img {
+    position: relative;
+}
+
+.benefits__secondary-circle {
+    width: 320px;
+    height: 320px;
+    background-color: var(--color-primary-);
+    display: block;
+    border-radius: 50%;
+    left: 17px;
+    top: 70px;
+    margin: 12px 0 38px 70px;
+}
+
+.benefits__secondary-circle::after {
+    content: url(/images/iPhone2.png);
+    width: 416px;
+    height: 230px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 29px 0 13px 70px;
+}
+
+.benefits__secondary {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 37px;
+}
+
+/* third  */
+
+.benefits__third__left {
+    background: var(--color-white-);
+    display: flex;
+    flex-direction: column;
+    width: 623px;
+    height: 370px;
+    margin: 38px 60px 105px 0;
+    padding: 70px 35px;
+}
+
+.benefits__third__left-title {
+    font-family: var(--font-raleway-);
+    font-size: 3.6rem;
+    color: var(--color-black-);
+    text-align: left;
+}
+
+.benefits__third__left__item-text {
+    font-family: var(--font--openSens-);
+    font-size: 1.6rem;
+    color: var(--color-black-);
+    text-align: left;
+    margin: 30px 0;
+}
+
+.benefits__third__left__item__line::after {
+    content: '';
+    display: inline-block;
+    height: 3px;
+    width: 328px;
+    background: var(--color-green-);
+    border: 1px solid var(--color-green-);
+}
+
+.benefits__third__img {
+    width: 440px;
+    height: 370px;
+    background: var(--color-green-);
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    margin: 38px 0 105px 0;
+    padding: 98px 82px 65px 62px;
+}
+
+.benefits__third__container {
+    display: flex;
+}
+}

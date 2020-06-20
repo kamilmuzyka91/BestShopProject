@@ -1,0 +1,66 @@
+.opening {
+    background: $color-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden; //ukrywa zawartość, która wychodzi poza granicę elementu
+
+    .opening__content {
+        background: $color-white;
+        margin-top: 120px;
+        text-align: center;
+
+        @include mobile {
+            margin-top: 100px;
+        }
+    }
+
+    /* start */
+    .opening__title {
+        font-family: $font-raleway;
+        font-size: 2.1875rem;
+        color: $color-black;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        @include mobile {
+
+            padding: 0 70px;
+
+        }
+    }
+
+    .opening__text {
+        font-family: $font-open-sans;
+        font-size: 1rem;
+        color: $color-black;
+        text-align: center;
+        margin-bottom: 3.8rem;
+    }
+
+    .opening-btn {
+        display: inline-block;
+        background: $color-primary;
+        padding: 22px 155px;
+        border-radius: 4rem;
+        box-shadow: 5px 10px 14px #07ACE629;
+        font-size: 1rem;
+        font-family: $font-open-sans;
+        font-weight: 700;
+        color: $color-white;
+    }
+
+    .opening__img {
+        width: 100%;
+        height: auto;
+
+        @include mobile {
+
+            width: 220%;
+
+            transform: translateX(-28%);
+
+        }
+
+    }
+}
