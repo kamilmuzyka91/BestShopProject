@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -1055,5 +1056,179 @@ h2 {
   border: 1px solid #EB476E;
   border-radius: 2px;
   margin-right: 13px;
+}
+
+.contact {
+  margin-top: 155px;
+}
+
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__column-left {
+  flex-direction: column;
+}
+
+.contact__column-right {
+  flex-direction: column;
+}
+
+.contact__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 49px;
+  color: #000000;
+  padding-bottom: 22px;
+}
+
+.contact__instruction {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  padding-bottom: 42px;
+}
+
+.contact__details {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #A5A5A5;
+}
+
+.details__item-phone {
+  padding-left: 20px;
+}
+
+.details__item {
+  text-decoration: none;
+  color: #A5A5A5;
+}
+
+.consent__text {
+  width: 405px;
+  height: 108px;
+}
+
+/* style for form */
+.form__label {
+  display: inline-flex;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #08A6E4;
+  text-transform: uppercase;
+  padding-bottom: 21px;
+}
+
+.form__input {
+  border: none;
+  border-bottom: 1px solid #95989A;
+  width: 448px;
+  padding: 2px;
+}
+
+.consent__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #707070;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.form__checkbox {
+  display: flex;
+  margin-top: 30px;
+}
+
+/* ukrycie checkbox'a */
+input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* wstawienie własnego spana */
+.checkbox__fake {
+  cursor: pointer;
+  display: flex;
+}
+
+/* wytłumaczenie na samym dole */
+.checkbox__fake {
+  height: 24px;
+  width: 24px;
+  border: 1px solid #95989A;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked + span {
+  background-image: url(/images/Checkmark.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn {
+  display: inline-flex;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 20px 97px;
+}
+
+.btn--primary {
+  background: #08A6E4;
+  box-shadow: 5px 10px 14px #07ACE629;
+  border-radius: 35px;
+  margin: 20px 0 59px 213px;
+}
+
+/* wytłumaczenie input[type="checkbox"]:checked+span {}
+
+W jaki sposób rozpoznać,
+że nasz input zmienił stan (z niezaznaczonego na zaznaczony i na odwrót)
+ i tym samym zmienić styl naszego elementu span? Wykorzystamy tutaj 
+ pseudoklase :checked dzięki której dowiemy się czy input jest zaznaczony,
+a także selektor rodzeństwa:+,
+tak żeby ostylować odpowiedni element. */
+.footer__container-item {
+  min-height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #F7F7F7;
+  box-shadow: 0px -5px 40px #00000029;
+}
+.footer__container-item .footer__logo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-left: 137px;
+}
+.footer__container-item .footer__copy {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  color: #A5A5A5;
+  margin-top: 7px;
+}
+.footer__container-item .footer__social {
+  margin-right: 137px;
+}
+.footer__container-item .footer__social a:first-of-type {
+  margin-right: 20px;
+}
+.footer__container-item .footer__social-twitter {
+  width: 24px;
+  height: 24px;
+}
+.footer__container-item .footer__social-facebook {
+  width: 24px;
+  height: 24px;
 }
 /*# sourceMappingURL=main.css.map */

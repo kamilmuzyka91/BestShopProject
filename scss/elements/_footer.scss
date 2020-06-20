@@ -1,0 +1,41 @@
+.footer__container-item {
+    min-height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:$color-light-grey;
+    box-shadow: 0px -5px 40px #00000029;
+
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-left: 137px;
+}
+
+.footer__copy {
+    font-family: $font-open-sans;
+    font-size: 11px;
+    color: $color-grey;
+    margin-top: 7px;
+}
+
+.footer__social {
+    margin-right: 137px;
+}
+
+.footer__social a:first-of-type {
+    margin-right: 20px;
+}
+
+.footer__social-twitter {
+    width: 24px;
+    height: 24px;
+}
+
+.footer__social-facebook {
+    width: 24px;
+    height: 24px;
+}
+}
