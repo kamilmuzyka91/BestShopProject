@@ -807,23 +807,32 @@ h2 {
   }
 }
 
-.pricing__item {
+.pricing__container {
+  margin: 0 auto;
+  /* pricing item primary  */
+  /* pricing item secondary  */
+  /* pricing item third  */
+}
+.pricing__container .pricing__item {
   display: flex;
   flex-direction: row;
 }
-
-.pricing__item__title {
+@media (max-width: 792px) {
+  .pricing__container .pricing__item {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.pricing__container .pricing__item__title {
   display: flex;
   justify-content: center;
   font-family: "Raleway", sans-serif;
   font-size: 36px;
-  color: #000;
+  color: #000000;
   margin-top: 100px;
 }
-
-/* pricing item primary  */
-.pricing__item__primary {
-  background: #FFFFFF;
+.pricing__container .pricing__item__primary {
+  background: #ffffff;
   border: 1px solid #FB3B64;
   border-radius: 18px;
   width: 370px;
@@ -835,10 +844,9 @@ h2 {
   margin-top: 71px;
   position: relative;
 }
-
-.pricing__item__primary::after {
+.pricing__container .pricing__item__primary::after {
   content: "Begin";
-  color: var(--color-white-);
+  color: #ffffff;
   font-size: 13px;
   font-weight: bold;
   padding: 16px 57px;
@@ -849,36 +857,31 @@ h2 {
   left: 50%;
   Transform: translate(-50%, -50%);
 }
-
-.pricing__header-primary {
+.pricing__container .pricing__header-primary {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-
-.pricing__item__primary-title {
+.pricing__container .pricing__item__primary-title {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: bold;
   color: #13253B;
   margin: 34px 160px 14px 161px;
 }
-
-.pricing__item__primary-price {
+.pricing__container .pricing__item__primary-price {
   font-family: "Open Sans", sans-serif;
   font-size: 46px;
-  color: var(--color-redish-);
+  color: #FB3B64;
   margin: 0 156px 69px 157px;
 }
-
-.pricing__primary__offer-text {
+.pricing__container .pricing__primary__offer-text {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  color: #000;
+  color: #000000;
   padding-bottom: 20px;
 }
-
-.checkmark__yes {
+.pricing__container .checkmark__yes {
   width: 11px;
   height: 10px;
   text-align: center;
@@ -889,8 +892,7 @@ h2 {
   border-radius: 2px;
   margin-right: 13px;
 }
-
-.checkmark__no {
+.pricing__container .checkmark__no {
   width: 11px;
   height: 10px;
   text-align: center;
@@ -901,10 +903,8 @@ h2 {
   border-radius: 2px;
   margin-right: 13px;
 }
-
-/* pricing item secondary  */
-.pricing__item__secondary {
-  background: #FFFFFF;
+.pricing__container .pricing__item__secondary {
+  background: #ffffff;
   box-shadow: 5px 10px 27px #07ACE629;
   border: 1px solid #07ACE6;
   border-radius: 18px;
@@ -917,10 +917,9 @@ h2 {
   margin: 50px 58px 0 58px;
   position: relative;
 }
-
-.pricing__item__secondary::after {
+.pricing__container .pricing__item__secondary::after {
   content: "Begin";
-  color: var(--color-white-);
+  color: #ffffff;
   font-size: 13px;
   font-weight: bold;
   padding: 16px 65px;
@@ -932,44 +931,38 @@ h2 {
   left: 50%;
   Transform: translate(-50%, -50%);
 }
-
-.pricing__header-secondary {
+.pricing__container .pricing__header-secondary {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-
-.pricing__item__secondary-title {
+.pricing__container .pricing__item__secondary-title {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: bold;
   color: #13253B;
   margin: 34px 160px 14px 161px;
 }
-
-.pricing__item__secondary-price {
+.pricing__container .pricing__item__secondary-price {
   font-family: "Open Sans", sans-serif;
   font-size: 46px;
   color: #07ACE6;
   margin: 0 156px 5px 157px;
 }
-
-.limited {
+.pricing__container .limited {
   font-family: "Raleway", sans-serif;
   font-size: 12px;
   font-weight: bold;
   color: #13253B;
   margin-bottom: 61px;
 }
-
-.pricing__secondary__offer-text {
+.pricing__container .pricing__secondary__offer-text {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  color: #000;
+  color: #000000;
   padding-bottom: 20px;
 }
-
-.checkmark__yes {
+.pricing__container .checkmark__yes {
   width: 11px;
   height: 10px;
   text-align: center;
@@ -980,8 +973,7 @@ h2 {
   border-radius: 2px;
   margin-right: 13px;
 }
-
-.checkmark__no {
+.pricing__container .checkmark__no {
   width: 11px;
   height: 10px;
   text-align: center;
@@ -992,10 +984,8 @@ h2 {
   border-radius: 2px;
   margin-right: 13px;
 }
-
-/* pricing item third  */
-.pricing__item__third {
-  background: #FFFFFF;
+.pricing__container .pricing__item__third {
+  background: #ffffff;
   border: 1px solid #55DFB4;
   border-radius: 18px;
   width: 372px;
@@ -1007,10 +997,9 @@ h2 {
   margin-top: 71px;
   position: relative;
 }
-
-.pricing__item__third::after {
+.pricing__container .pricing__item__third::after {
   content: "Begin";
-  color: var(--color-white-);
+  color: #ffffff;
   font-size: 13px;
   font-weight: bold;
   padding: 16px 57px;
@@ -1021,36 +1010,31 @@ h2 {
   left: 50%;
   Transform: translate(-50%, -50%);
 }
-
-.pricing__header-third {
+.pricing__container .pricing__header-third {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-
-.pricing__item__third-title {
+.pricing__container .pricing__item__third-title {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: bold;
   color: #13253B;
   margin: 34px 160px 14px 161px;
 }
-
-.pricing__item__third-price {
+.pricing__container .pricing__item__third-price {
   font-family: "Open Sans", sans-serif;
   font-size: 46px;
-  color: var(--color-redish-);
+  color: #FB3B64;
   margin: 0 156px 69px 157px;
 }
-
-.pricing__third__offer-text {
+.pricing__container .pricing__third__offer-text {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  color: #000;
+  color: #000000;
   padding-bottom: 20px;
 }
-
-.checkmark__yes {
+.pricing__container .checkmark__yes {
   width: 11px;
   height: 10px;
   text-align: center;
@@ -1061,8 +1045,7 @@ h2 {
   border-radius: 2px;
   margin-right: 13px;
 }
-
-.checkmark__no {
+.pricing__container .checkmark__no {
   width: 11px;
   height: 10px;
   text-align: center;
