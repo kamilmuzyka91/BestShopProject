@@ -6,7 +6,7 @@
 .pricing__item__title {
     display: flex;
     justify-content: center;
-    font-family: var(--font-raleway-);
+    font-family: $font-raleway;
     font-size: 36px;
     color: #000;
     margin-top: 100px;
@@ -49,7 +49,7 @@
 }
 
 .pricing__item__primary-title {
-    font-family: var(--font-raleway-);
+    font-family: $font-raleway;
     font-size: 20px;
     font-weight: bold;
     color: #13253B;
@@ -57,14 +57,14 @@
 }
 
 .pricing__item__primary-price {
-    font-family: var(--font-openSens-);
+    font-family: $font-open-sans;
     font-size: 46px;
     color: var(--color-redish-);
     margin: 0 156px 69px 157px;
 }
 
 .pricing__primary__offer-text {
-    font-family: var(--font-openSens-);
+    font-family: $font-open-sans;
     font-size: 14px;
     color: #000;
     padding-bottom: 20px;
@@ -74,7 +74,7 @@
     width: 11px;
     height: 10px;
     text-align: center;
-    font-family: var(--font-raleway-);
+    font-family: $font-raleway;
     font: Bold 9px;
     color: #55DFB4;
     border: 1px solid #55DFB4;
@@ -86,7 +86,7 @@
     width: 11px;
     height: 10px;
     text-align: center;
-    font-family: var(--font-raleway-);
+    font-family: $font-raleway;
     font: Bold 9px;
     color: #EB476E;
     border: 1px solid #EB476E;
@@ -133,7 +133,7 @@
 }
 
 .pricing__item__secondary-title {
-    font-family: var(--font-raleway-);
+    font-family: $font-raleway;
     font-size: 20px;
     font-weight: bold;
     color: #13253B;
@@ -141,14 +141,14 @@
 }
 
 .pricing__item__secondary-price {
-    font-family: var(--font-openSens-);
+    font-family: $font-open-sans;
     font-size: 46px;
     color: #07ACE6;
     margin: 0 156px 5px 157px;
 }
 
 .limited {
-    font-family: var(--font-raleway-);
+    font-family: $font-raleway;
     font-size: 12px;
     font-weight: bold;
     color: #13253B;
@@ -156,7 +156,7 @@
 }
 
 .pricing__secondary__offer-text {
-    font-family: var(--font-openSens-);
+    font-family: $font-open-sans;
     font-size: 14px;
     color: #000;
     padding-bottom: 20px;
@@ -166,7 +166,7 @@
     width: 11px;
     height: 10px;
     text-align: center;
-    font-family: var(--font-raleway-);
+    font-family: $font-raleway;
     font: Bold 9px;
     color: #55DFB4;
     border: 1px solid #55DFB4;
@@ -178,7 +178,7 @@
     width: 11px;
     height: 10px;
     text-align: center;
-    font-family: var(--font-raleway-);
+    font-family: $font-raleway;
     font: Bold 9px;
     color: #EB476E;
     border: 1px solid #EB476E;
@@ -223,7 +223,7 @@
 }
 
 .pricing__item__third-title {
-    font-family: var(--font-raleway-);
+    font-family: $font-raleway;
     font-size: 20px;
     font-weight: bold;
     color: #13253B;
@@ -231,14 +231,14 @@
 }
 
 .pricing__item__third-price {
-    font-family: var(--font-openSens-);
+    font-family: $font-open-sans;
     font-size: 46px;
     color: var(--color-redish-);
     margin: 0 156px 69px 157px;
 }
 
 .pricing__third__offer-text {
-    font-family: var(--font-openSens-);
+    font-family: $font-open-sans;
     font-size: 14px;
     color: #000;
     padding-bottom: 20px;
@@ -248,7 +248,7 @@
     width: 11px;
     height: 10px;
     text-align: center;
-    font-family: var(--font-raleway-);
+    font-family: $font-raleway;
     font: Bold 9px;
     color: #55DFB4;
     border: 1px solid #55DFB4;
@@ -260,7 +260,7 @@
     width: 11px;
     height: 10px;
     text-align: center;
-    font-family: var(--font-raleway-);
+    font-family: $font-raleway;
     font: Bold 9px;
     color: #EB476E;
     border: 1px solid #EB476E;
