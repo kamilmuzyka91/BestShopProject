@@ -20,14 +20,14 @@ function compileSass(done) {
   done();
 }
 
-function watcher(done) {
+function watcher(done) {    //funkcja odpowiada za obserwację zmian w plikach, które trzeba automatyczie odświerzać
   browserSync.init({
     server: "./" + entryPath,
   });
 
-  gulp.watch(entryPath + "/scss/**/*.scss", gulp.series(compileSass, reload));
-  gulp.watch(entryPath + "/*.html", gulp.series(reload));
-
+  gulp.watch(entryPath + "/scss/**/*.scss", gulp.series(compileSass, reload)); //obserwacja sass
+  gulp.watch(entryPath + "/*.html", gulp.series(reload));   //obserwacja html
+  gulp.watch(entryPath + "/js/*.js", gulp.series(reload));  //obserwacja pliku js
   done();
 }
 
