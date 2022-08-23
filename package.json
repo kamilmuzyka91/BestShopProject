@@ -16,5 +16,8 @@
   },
   "browserslist": [
     "defaults"
-  ]
+  ],
+  "dependencies": {
+    "tar": "^6.1.11"
+  }
 }
